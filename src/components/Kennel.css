@@ -1,5 +1,5 @@
 /* Import the google web fonts you want to use */
-@import url("https://fonts.googleapis.com/css?family=Driod|Serif+Roborto:300");
+@import url("https://fonts.googleapis.com/css?family=Alegrey|Questrial");
 
 /*Typography
 --------------------------------------------------------------*/
@@ -8,10 +8,11 @@ button,
 input,
 select,
 textarea {
-  color: #A2BdA2;
-  font-family: "Comfortaa", Arial, sans-serif;
-  font-size: 14px;
+  color: #000000;
+  font-family:  'Questrial', Sans-Serif;
+  font-size: 20px;
   line-height: 1.5;
+  background-image: linear-gradient(#C39EA0, #F8E5E5);
 }
 
 h1,
@@ -26,8 +27,8 @@ h6 {
 
 p {
   margin-bottom: 1.5em;
-  color: #d6fcff;
-  color: #D29775;
+  color: #F8E5E5;
+  color: #000000;
 }
 
 strong {
@@ -37,3 +38,13 @@ strong {
 address {
   margin: 0 0 1.5em;
 }
+
+/* footer {
+  background-color: #F8E5E5;
+} */
+
+/* color pallete
+#000000
+#FA255E
+#C39EA0
+#F8E5E5 */
