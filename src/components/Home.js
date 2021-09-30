@@ -1,5 +1,6 @@
 import React from "react";
 import { PropsAndState } from "./PropsAndState";
+import { QuoteList } from "./quote/Quote";
 
 export const Home = ({isAdmin}) => (
     <>
@@ -17,5 +18,6 @@ export const Home = ({isAdmin}) => (
             <div>500 Puppy Way</div>
         </address>
         <PropsAndState yourName={"Moon Unit"} />
+        <QuoteList />
     </>
 )

@@ -1,9 +1,23 @@
-import React from "react"
-import "./Customer.css"
+import React, {useState, useEffect} from 'react';
+import { CustomerCard } from './CustomerCard';
+import { getAllCustomers } from '../../modules/CustomerManager';
 
-export const CustomerCard = () => (
-    <section className="customer">
-        <h3 className="customer__name">Jake Deeds</h3>
-        <div className="customer__address">Address: 100 Infinity Way</div>
-    </section>
-)
+export const CustomerList = () => {
+const [customers, setCustomers] = useState([]);
+
+const getCustomers = () => {
+    return getAllCustomers().then(customersFromAPI => {
+        setCustomers(customersFromAPI)
+    });
+};
+
+useEffect(() => {
+    getCustomers();
+}, []);
+
+return (
+    <div className="container-cards">
+        {customers.map(customer => <CustomerCard key={customer.id} customer={customer} />)}
+    </div>
+);
+};
