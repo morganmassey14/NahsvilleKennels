@@ -46,27 +46,96 @@
     "customers": [
         {
             "id": 1,
-            "name": "Hannah Hall",
-            "address": "7002 Chestnut Ct"
+            "name": "Deaners",
+            "address": "101 Silverback Way",
+            "image": "deaners.jpg",
+            "animal": "Sunbeam Dream"
+        },
+        {
+            "id": 2,
+            "name": "Jilly Bean",
+            "address": "202 BatDog Ave",
+            "image": "jillybean.jpg",
+            "animal": "Lhuna"
+        },
+        {
+            "id": 3,
+            "name": "Rachel",
+            "address": "303 Speckled Chest Drive",
+            "image": "rachel.jpg",
+            "animal": "Daisy Mae"
+        },
+        {
+            "id": 4,
+            "name": "GiGi",
+            "address": "404 HeartHead Park",
+            "image": "gigi.jpg",
+            "animal": "Valentine"
+        },
+        {
+            "id": 5,
+            "name": "Cay-Cay",
+            "address": "505 Bite Plaza",
+            "image": "caycay.jpg",
+            "animal": "Hops & Barley"
+        },
+        {
+            "id": 6,
+            "name": "Timmy Boy",
+            "address": "606 TinySmol Circle",
+            "image": "timmyboy.jpg",
+            "animal": "Moon Unit"
         }
     ],
     "employees": [
         {
             "id": 1,
-            "name": "Morgan Massey",
-            "address": "209 Emory Drive"
+            "name": "Shmorgan",
+            "address": "606 TinySmol Circle",
+            "image": "morgan.jpg"
+        },
+
+        {
+            "id": 2,
+            "name": "Karl Barn Net",
+            "address": "606 TinySmol Circle",
+            "image": "karl.jpg"
+        },
+
+        {
+            "id": 3,
+            "name": "Jake Deeds",
+            "address": "707 PleaseAdoptAdog Court",
+            "image": "jake.jpg"
+        },
+
+        {
+            "id": 4,
+            "name": "Kelli Bear",
+            "address": "808 SweetieGirl Blvd",
+            "image": "kellibear.jpg"
         }
     ],
     "locations": [
         {
             "id": 1,
             "name": "Nashville North",
-            "address": "8422 Johnson Pike"
+            "address": "8422 Johnson Pike",
+            "image": "fridays.jpg"
         },
         {
             "id": 2,
             "name": "Nashville South",
-            "address": "209 Emory Drive"
+            "address": "209 Emory Drive",
+            "image": "chilis.jpg"
+
+
+        },
+        {
+            "id": 3,
+            "name": "Nashville East",
+            "address": "5701 Heart Lane",
+            "image": "corral.jpg"
         }
     ]
 }

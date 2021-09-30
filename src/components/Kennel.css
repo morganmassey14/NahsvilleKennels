@@ -8,14 +8,16 @@ button,
 input,
 select,
 textarea {
-  color: #000000;
+  /* color: #A7BC5B; */
   font-family:  'Questrial', Sans-Serif;
   font-size: 20px;
   line-height: 1.5;
-  background-image: linear-gradient(#C39EA0, #F8E5E5);
+  background-image: #FFFFFF;
 }
 
-h1,
+h1 {
+ color: #A7BC5B;
+}
 h2,
 h3,
 h4,
@@ -44,7 +46,6 @@ address {
 } */
 
 /* color pallete
-#000000
-#FA255E
-#C39EA0
-#F8E5E5 */
+#FFFFFF
+#A7BC5B
+#8DA242 */
