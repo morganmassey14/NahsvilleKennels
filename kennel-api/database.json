@@ -1,13 +1,47 @@
 {
     "animals": [
-        { "id": 1, "name": "Moon Unit", "breed": "Dachshund", "image": "moonunit.jpg"},
-        { "id": 2, "name": "Sunbeam Dream", "breed": "Dachshund", "image": "sunbeam.jpg"},
-        { "id": 3, "name": "Lhuna", "breed": "Rat Terrier", "image": "lhuna.jpg"},
-        { "id": 4, "name": "Daisy", "breed": "Boxer", "image": "daisymae.jpg"},
-        { "id": 5, "name": "Valentine", "breed": "Mini Aussie Doodle", "image": "valentine.jpg"},
-        { "id": 6, "name": "Hopps", "breed": "Boxer", "image": "hopps.jpg"},
-        { "id": 7, "name": "Barley", "breed": "Boxer Mix", "image": "barley.jpg"}
-        
+        {
+            "id": 1,
+            "name": "Moon Unit",
+            "breed": "Dachshund",
+            "image": "moonunit.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Sunbeam Dream",
+            "breed": "Dachshund",
+            "image": "sunbeam.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Lhuna",
+            "breed": "Rat Terrier",
+            "image": "lhuna.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Daisy",
+            "breed": "Boxer",
+            "image": "daisymae.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Valentine",
+            "breed": "Mini Aussie Doodle",
+            "image": "valentine.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Hopps",
+            "breed": "Boxer",
+            "image": "hopps.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Barley",
+            "breed": "Boxer Mix",
+            "image": "barley.jpg"
+        }
     ],
     "customers": [
         {
@@ -16,7 +50,13 @@
             "address": "7002 Chestnut Ct"
         }
     ],
-    "employees": [],
+    "employees": [
+        {
+            "id": 1,
+            "name": "Morgan Massey",
+            "address": "209 Emory Drive"
+        }
+    ],
     "locations": [
         {
             "id": 1,
