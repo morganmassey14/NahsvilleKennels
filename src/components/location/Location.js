@@ -1,9 +1,24 @@
-import React from "react"
+import React, {useState, useEffect } from "react"
+import { LocationCard } from "./LocationCard"
+import { getAllLocations } from "../../modules/LocationManager"
 import "./Location.css"
 
-export const LocationCard = () => (
-    <section className="location">
-        <h3 className="location__name">Nashville Kennel North</h3>
-        <div className="location__address">200 Main Street</div>
-    </section>
-)
+export const LocationList = () => {
+    const [locations, setLocations] = useState([]);
+
+    const getLocations = () => {
+        return getAllLocations().then(locationsFromAPI =>{
+            setLocations(locationsFromAPI);
+        });
+    };
+
+    useEffect(() => {
+        getLocations();
+    }, []);
+
+    return (
+        <div className="container-cards">
+            {locations.map(location => <LocationCard key={location.id} location={location}/>)}
+        </div>
+    );
+};
