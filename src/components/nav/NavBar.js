@@ -7,9 +7,10 @@ export const NavBar = () => {
     return (
         <>
             <div className="nav__flex">
-                <img className="logo" src={logo} alt="Nashville Kennels" />
+                <div className="logo_image"><img className="logo" src={logo} alt="Nashville Kennels" /></div>
                 <div className="nav__flex__bar">
-                    <ul className="navbar">
+                    {/* <div className="nav__links"> */}
+                        <ul className="navbar">
                         <li className="navbar__item active">
                             <Link className="navbar__link" to="/">NSS Kennels</Link>
                         </li>
@@ -25,8 +26,8 @@ export const NavBar = () => {
                         <li className="navbar__item">
                             <Link className="navbar__link" to="/employees">Employees</Link>
                         </li>
-                    </ul>
-                </div>
+                    </ul></div>
+                {/* </div> */}
             </div>
         </>
     )
