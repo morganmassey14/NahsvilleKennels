@@ -1,0 +1,5 @@
+.home__flex {
+    display: flex;
+    justify-content: right;
+    align-content: flex-end;
+}

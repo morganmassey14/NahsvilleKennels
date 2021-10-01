@@ -1,11 +1,13 @@
 import React from "react";
 import { QuoteList } from "./quote/Quote";
 import banner from "../images/banner.png"
+import "./Home.css"
 
 export const Home = () => (
     <>
     <div className="home__flex">
         <img className="banner" src={banner} alt="Banner Promo" />
+    <div className="home__flex__box">
         <h1>Nashville Kennels</h1>
         <h3>Boarding and Grooming</h3>
         <small>Loving care when you're not there.</small>
@@ -15,6 +17,7 @@ export const Home = () => (
             <div>500 Puppy Way</div>
         </address>
         <QuoteList />
+        </div>
         </div>
     </>
 )

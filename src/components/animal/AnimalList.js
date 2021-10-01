@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { AnimalCard } from './AnimalCard';
-import { getAllAnimals } from '../../modules/AnimalManager';
+import { getAllAnimals, deleteAnimal } from '../../modules/AnimalManager';
 
 export const AnimalList = () => {
     const [animals, setAnimals] = useState([]);
@@ -11,6 +11,12 @@ export const AnimalList = () => {
         });
     };
 
+    const handleDeleteAnimal = id => {
+        deleteAnimal(id)
+        .then(() => getAllAnimals().then(setAnimals));
+    };
+    
+
     useEffect(() => {
         getAnimals();
     }, []);
@@ -18,7 +24,8 @@ export const AnimalList = () => {
     console.log("animals is", animals)
     return (
         <div className="container-cards">
-            {animals.map(animal => <AnimalCard key={animal.id} animal={animal}/>)}
+            {animals.map(animal => <AnimalCard key={animal.id} animal={animal}
+            handleDeleteAnimal={handleDeleteAnimal} />)}
         </div>
     );
 };
