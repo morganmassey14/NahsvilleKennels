@@ -1,6 +1,43 @@
-.home__flex {
+.parent__home {
+    display: flex;
+    flex-direction: column;
+    border-top: 5px solid #A7BC5B;
+}
+
+.banner__child {
     display: flex;
     flex-direction: row;
-    justify-content: right;
-    border: 2px solid black;
+    justify-content: stretch;
+}
+
+.info__child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service__row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-right: 700px;
+    margin-left: 50px;
+    padding-left: 50px;
+}
+
+/* .boarding__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+p {
+    margin: 50px;
+    margin-top: 0px;
+    text-align: left;
+}
+
+h4 {
+    margin: 0px;
 }
