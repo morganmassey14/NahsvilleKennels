@@ -9,5 +9,63 @@
       flex-basis: 28%;
       margin: 1em;
       border: 4px solid #8DA242;
+      border-radius: 25px;
   }
   
+  .container-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+  }
+
+h3 {
+    text-align: center;
+    color: #A7BC5B;
+}
+
+.animal button {
+	background-color: whitesmoke;
+	border: 2px solid #A7BC5B;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	padding: .5em;
+	border-radius: 10px;
+	margin: .1em;
+    margin-left: 90px;
+	width: 50%;
+  }
+
+  .animal__breed {
+      text-align: center;
+      color: #8DA242;
+    
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 50%; */
+}
+
+.animal__details {
+    flex-basis: 28%;
+      margin: 550px;
+      margin-top: 20px;
+      border: 4px solid #8DA242;
+      border-radius: 25px;
+}
+
+.animal__location {
+    text-align: left;
+    padding-left: 10px;
+  }
+  
+.animal__owner {
+  text-align: left;
+  padding-left: 10px;
+
+}  

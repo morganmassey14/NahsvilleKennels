@@ -23,7 +23,7 @@ export const LocationDetail = () => {
   }, [locationId]);
 
   return (
-    <section className="location">
+    <section className="location__details">
       <h3 className="location__name">{location.name}</h3>
       <div className="location__address">{location.address}</div>
       {/* What's up with the question mark???? See below.*/}

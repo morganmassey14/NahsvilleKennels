@@ -1,46 +1,52 @@
 {
   "animals": [
-    { 
-      "id": 1,
-      "name": "Moon Unit",
-      "breed": "Dachshund",
-      "image": "moonunit.jpg"
-    },
-    { 
+    {
       "id": 2,
       "name": "Sunbeam Dream",
       "breed": "Dachshund",
-      "image": "sunbeam.jpg"
+      "image": "sunbeam.jpg",
+      "customerId": 1,
+      "locationId": 2
     },
     {
       "id": 3,
       "name": "Lhuna",
       "breed": "Rat Terrier",
-      "image": "lhuna.jpg"
+      "image": "lhuna.jpg",
+      "customerId": 2,
+      "locationId": 3
     },
     {
       "id": 4,
       "name": "Daisy",
       "breed": "Boxer",
-      "image": "daisymae.jpg"
+      "image": "daisymae.jpg",
+      "customerId": 3,
+      "locationId": 1
     },
     {
       "id": 5,
       "name": "Valentine",
       "breed": "Mini Aussie Doodle",
-      "image": "valentine.jpg"
+      "image": "valentine.jpg",
+      "customerId": 4,
+      "locationId": 2
     },
     {
       "id": 6,
       "name": "Hopps",
       "breed": "Boxer",
-      "image": "hopps.jpg"
+      "image": "hopps.jpg",
+      "customerId": 5,
+      "locationId": 3
     },
     {
       "id": 7,
       "name": "Barley",
       "breed": "Boxer Mix",
-      "image": "barley.jpg"
+      "image": "barley.jpg",
+      "customerId": 5,
+      "locationId": 3
     }
   ],
   "customers": [
@@ -49,68 +55,74 @@
       "name": "Deaners",
       "address": "101 Silverback Way",
       "image": "deaners.jpg",
-      "animal": "Sunbeam Dream"
+      "animalId": 2
     },
     {
       "id": 2,
       "name": "Jilly Bean",
       "address": "202 BatDog Ave",
       "image": "jillybean.jpg",
-      "animal": "Lhuna"
+      "animalId": 3
     },
     {
       "id": 3,
       "name": "Rachel",
       "address": "303 Speckled Chest Drive",
       "image": "rachel.jpg",
-      "animal": "Daisy Mae"
+      "animalId": 4
     },
     {
       "id": 4,
       "name": "GiGi",
       "address": "404 HeartHead Park",
       "image": "gigi.jpg",
-      "animal": "Valentine"
+      "animalId": 5
     },
     {
       "id": 5,
       "name": "Cay-Cay",
       "address": "505 Bite Plaza",
       "image": "caycay.jpg",
-      "animal": "Hops & Barley"
-    },
-    {
-      "id": 6,
-      "name": "Timmy Boy",
-      "address": "606 TinySmol Circle",
-      "image": "timmyboy.jpg",
-      "animal": "Moon Unit"
+      "animalId": 6
     }
   ],
   "employees": [
     {
       "id": 1,
       "name": "Shmorgan",
-      "address": "606 TinySmol Circle",
-      "image": "morgan.jpg"
+      "image": "morgan.jpg",
+      "job": "Director",
+      "email": "shmorgan@nkennels.com",
+      "locationId": 1,
+      "bio": "Morgan has been the director of Nashville Kennels for the past 5 years. She enjoys dachshunds, front end web development, pina colodas, and getting caught in the rain. She designed this webpage, and may or may not have spent too many hours outside of class tweaking the CSS."
     },
     {
       "id": 2,
       "name": "Karl Barn Net",
-      "address": "606 TinySmol Circle",
-      "image": "karl.jpg"
+      "image": "karl.jpg",
+      "job": "Trainer",
+      "email": "karlbarnnet@nkennels.com",
+      "locationId": 2,
+      "bio": "Karl has been a dog trainer for Nashville Kennels for the past 2 years. He recieved his education from dogtraining.net, and specializes in calming aggresive breeds. When he isn't training, you can find him being the coolest dad in town."
+
     },
     {
       "id": 3,
       "name": "Jake Deeds",
-      "address": "707 PleaseAdoptAdog Court",
-      "image": "jake.jpg"
+      "image": "jake.jpg",
+      "job": "Groomer",
+      "email": "jakedeeds@nkennels.com",
+      "locationId": 3,
+      "bio": "Jake is Nashville Kennel's senior dog groomer, and has been grooming dogs for over 15 years. He specializes in doodles, noodles, and caboodles. When not grooming dogs, you can find Mr. Deeds making psychedelic photoshop creations."
     },
     {
       "id": 4,
       "name": "Kelli Bear",
-      "address": "808 SweetieGirl Blvd",
-      "image": "kellibear.jpg"
+      "image": "kellibear.jpg",
+      "job": "Social Media",
+      "email": "kellibear@nkennels.com",
+      "locationId": 2,
+      "bio": "Kelli is in charge of all social media opperations at Nashville Kennels. She recieved a degree from Rhode Island School of Twitter, and specializes in dog photography. When not running our social media platflorms, Kelli can be found drumming and roughing up her cat, Sweetie."
     }
   ],
   "locations": [

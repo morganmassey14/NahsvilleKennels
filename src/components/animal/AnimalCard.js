@@ -8,14 +8,14 @@ export const AnimalCard = ({ animal, handleDeleteAnimal }) => {
     return (
         <section className="animal">
             <h3 className="animal__name">{animal.name}</h3>
-            <div className="animal__breed">{animal.breed}</div>
-            <button type="button" onClick={() => handleDeleteAnimal(animal.id)}>Discharge</button>
-            <Link to={`/animals/${animal.id}`}>
-                <button>Details</button>
-            </Link>
             <picture>
                 <img src={require(`../../images/${animal.image}`).default} alt="My Dog" />
             </picture>
+            <div className="animal__breed">{animal.breed}</div>
+            <Link to={`/animals/${animal.id}`}>
+                <button>Details</button>
+            </Link>
+            <button type="button" onClick={() => handleDeleteAnimal(animal.id)}>Discharge</button>
         </section>
     )
 }
