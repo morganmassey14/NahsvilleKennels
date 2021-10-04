@@ -4,7 +4,7 @@ import './AnimalDetail.css';
 import { useParams, useHistory } from "react-router-dom"
 
 export const AnimalDetail = () => {
-  const [animal, setAnimal] = useState({ name: "", breed: "" });
+  const [animal, setAnimal] = useState({ name: "", breed: "", location: "", customer: ""  });
 
   const {animalId} = useParams();
   const history = useHistory();
@@ -16,18 +16,20 @@ export const AnimalDetail = () => {
       .then(animal => {
         setAnimal({
           name: animal.name,
-          breed: animal.breed
+          breed: animal.breed,
+          location: animal.location.name,
+          customer: animal.customer.name
         });
       });
   }, [animalId]);
 
   return (
-    <section className="animal">
+    <section className="animal__details">
       <h3 className="animal__name">{animal.name}</h3>
-      <div className="animal__breed">{animal.breed}</div>
+      <div className="animal__breed">Breed: {animal.breed}</div>
       {/* What's up with the question mark???? See below.*/}
-      <div className="animal__location">Location: {animal.location?.name}</div>
-      <div className="animal__owner">Customer: {animal.customer?.name}</div>
+      <div className="animal__location">Location: {animal.location}</div>
+      <div className="animal__owner">Owner: {animal.customer}</div>
     </section>
   );
 }

@@ -5,7 +5,7 @@ import { getEmployeeById } from '../../modules/EmployeeManager';
 
 
 export const EmployeeDetail = () => {
-  const [employee, setEmployee] = useState({ name: "", address: "" });
+  const [employee, setEmployee] = useState({ name: "", location: "", email: "", bio: "" });
 
   const {employeeId} = useParams();
   const history = useHistory();
@@ -17,15 +17,19 @@ export const EmployeeDetail = () => {
       .then(employee => {
         setEmployee({
           name: employee.name,
-          address: employee.address
+          location: employee.location.name,
+          email: employee.email,
+          bio: employee.bio
         });
       });
   }, [employeeId]);
 
   return (
-    <section className="employee">
+    <section className="employee__details">
       <h3 className="employee__name">{employee.name}</h3>
-      <div className="employee__address">{employee.address}</div>
+      <div className="employee__location">Location {employee.location}</div>
+      <div className="employee__email">Email: {employee.email}</div>
+      <div className="employee__bio">{employee.bio}</div>
       {/* What's up with the question mark???? See below.*/}
       {/* <div className="animal__location">Location: {animal.location?.name}</div>
       <div className="animal__owner">Customer: {animal.customer?.name}</div> */}

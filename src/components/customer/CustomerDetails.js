@@ -4,7 +4,7 @@ import { getCustomerById } from '../../modules/CustomerManager'
 import './CustomerDetails.css';
 
 export const CustomerDetail = () => {
-  const [customer, setCustomer] = useState({ name: "", address: "" });
+  const [customer, setCustomer] = useState({ name: "", address: "", animal: "" });
 
   const {customerId} = useParams();
   const history = useHistory();
@@ -15,18 +15,17 @@ export const CustomerDetail = () => {
       .then(customer => {
         setCustomer({
           name: customer.name,
-          address: customer.address
+          address: customer.address,
+          animal: customer.animal.name
         });
       });
   }, [customerId]);
 
   return (
-    <section className="customer">
+    <section className="customer__details">
       <h3 className="customer__name">{customer.name}</h3>
-      <div className="customer__breed">{customer.address}</div>
-      {/* What's up with the question mark???? See below.*/}
-      {/* <div className="animal__location">Location: {animal.location?.name}</div>
-      <div className="animal__owner">Customer: {animal.customer?.name}</div> */}
+      <div className="customer__address">Address: {customer.address}</div>
+      <div className="customer__animal">Animal: {customer.animal}</div>
     </section>
   );
 }
