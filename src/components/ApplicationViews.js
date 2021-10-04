@@ -9,27 +9,47 @@ import { AnimalDetail } from "./animal/AnimalDetail"
 import { CustomerDetail } from "./customer/CustomerDetails"
 import { EmployeeDetail } from "./employee/EmployeeDetail"
 import { LocationDetail } from "./location/LocationDetail"
+import { AnimalForm } from './animal/AnimalForm'
+import { LocationForm } from './location/LocationForm'
+import { Login } from './auth/Login'
+import { Register } from './auth/Register'
+import { useState } from "react"
+import { Redirect } from "react-router"
+import { AnimalEditForm } from "./animal/AnimalEditForm"
 
 export const ApplicationViews = ({ isAdmin }) => {
+    const [isAuthenticated, setIsAuthenticated] = useState(sessionStorage.getItem("kennel_customer") !== null)
+
+    const setAuthUser = (user) => {
+        sessionStorage.setItem("kennel_customer", JSON.stringify(user))
+        setIsAuthenticated(sessionStorage.getItem("kennel_customer") !== null)
+    }
+
+
     return (
         <>
-            {/* Render the location list when http://localhost:3000/ */}
             <Route exact path="/">
                 <Home isAdmin={isAdmin} />
-
             </Route>
 
-            {/* Render the animal list when http://localhost:3000/animals */}
             <Route exact path="/animals">
-                <AnimalList />
+                {isAuthenticated ? <AnimalList /> : <Redirect to="/login" />}
             </Route>
 
-            <Route path="/animals/:animalId(\d+)">
+            <Route path="/animals/create">
+                <AnimalForm />
+            </Route>
+
+            <Route exact path="/animals/:animalId(\d+)">
                 <AnimalDetail />
             </Route>
 
             <Route exact path="/locations">
                 <LocationList />
+            </Route>
+
+            <Route path="/locations/create">
+                <LocationForm />
             </Route>
 
             <Route path="/locations/:locationId(\d+)">
@@ -51,6 +71,19 @@ export const ApplicationViews = ({ isAdmin }) => {
             <Route path="/employees/:employeeId(\d+)">
                 <EmployeeDetail />
             </Route>
+
+            <Route path="/login">
+                <Login setAuthUser={setAuthUser} />
+            </Route>
+
+            <Route path="/register">
+                <Register setAuthUser={setAuthUser} />
+            </Route>
+
+            <Route path="/animals/:animalId(\d+)/edit">
+                {isAuthenticated ? <AnimalEditForm /> : <Redirect to="/login" />}
+            </Route>
+             
 
         </>
 

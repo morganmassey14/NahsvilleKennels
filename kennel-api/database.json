@@ -55,6 +55,7 @@
       "name": "Deaners",
       "address": "101 Silverback Way",
       "image": "deaners.jpg",
+      "email": "deaners@nkennels.com",
       "animalId": 2
     },
     {
@@ -62,6 +63,7 @@
       "name": "Jilly Bean",
       "address": "202 BatDog Ave",
       "image": "jillybean.jpg",
+      "email": "jillybean@nkennels.com",
       "animalId": 3
     },
     {
@@ -69,6 +71,7 @@
       "name": "Rachel",
       "address": "303 Speckled Chest Drive",
       "image": "rachel.jpg",
+      "email": "rachel@nkennels.com",
       "animalId": 4
     },
     {
@@ -76,6 +79,7 @@
       "name": "GiGi",
       "address": "404 HeartHead Park",
       "image": "gigi.jpg",
+      "email": "gigi@nkennels.com",
       "animalId": 5
     },
     {
@@ -83,6 +87,7 @@
       "name": "Cay-Cay",
       "address": "505 Bite Plaza",
       "image": "caycay.jpg",
+      "email": "caycay@nkennels.com",
       "animalId": 6
     }
   ],
