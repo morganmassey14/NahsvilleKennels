@@ -21,11 +21,11 @@ export const Home = () => (
                     <p><h4>Training</h4>AKC-licensed dog trainig. We offer group classes and one on ones. Our trainers strive for obedience, socialization, and building community.</p>
                     <p> <h4>Drop-In</h4>We come to you! Schedule one of our sitters to come to your home and give your dog potty breaks and midday walks.</p>
                     <div className="icon__row">
-                    <img className="boarding__icon" src={boarding} alt="Boarding Icon" />
-                    <img className="grooming__icon" src={grooming} alt="Grooming Icon" />
-                    <img className="daycare__icon" src={daycare} alt="Daycare Icon" />
-                    <img className="training__icon" src={training} alt="Training Icon" />
-                    <img className="dropin__icon" src={dropin} alt="Drop-In Icon" />
+                        <img className="boarding__icon" src={boarding} alt="Boarding Icon" />
+                        <img className="grooming__icon" src={grooming} alt="Grooming Icon" />
+                        <img className="daycare__icon" src={daycare} alt="Daycare Icon" />
+                        <img className="training__icon" src={training} alt="Training Icon" />
+                        <img className="dropin__icon" src={dropin} alt="Drop-In Icon" />
                     </div>
                 </div>
             </div>
