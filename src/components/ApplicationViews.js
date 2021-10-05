@@ -17,19 +17,11 @@ import { useState } from "react"
 import { Redirect } from "react-router"
 import { AnimalEditForm } from "./animal/AnimalEditForm"
 
-export const ApplicationViews = ({ isAdmin }) => {
-    const [isAuthenticated, setIsAuthenticated] = useState(sessionStorage.getItem("kennel_customer") !== null)
-
-    const setAuthUser = (user) => {
-        sessionStorage.setItem("kennel_customer", JSON.stringify(user))
-        setIsAuthenticated(sessionStorage.getItem("kennel_customer") !== null)
-    }
-
-
+export const ApplicationViews = ({ isAdmin, myUser, setAuthUser, isAuthenticated }) => {
     return (
         <>
             <Route exact path="/">
-                <Home isAdmin={isAdmin} />
+                <Home isAdmin={isAdmin} myUser={myUser} />
             </Route>
 
             <Route exact path="/animals">
